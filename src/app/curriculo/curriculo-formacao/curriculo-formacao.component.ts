@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as data from '../../../assets/curriculo/dados.json';
 
 @Component({
   selector: 'app-curriculo-formacao',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './curriculo-formacao.component.css'
 })
 export class CurriculoFormacaoComponent {
-
+  info = data.pessoa[0];
 }
