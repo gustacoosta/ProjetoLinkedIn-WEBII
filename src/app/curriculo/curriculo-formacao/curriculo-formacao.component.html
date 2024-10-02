@@ -1,1 +1,9 @@
-<p>curriculo-formacao works!</p>
+<div class="formacao">
+    <h2>Formação Acadêmica</h2>
+    <hr/>
+    <div class="curso" *ngFor="let curso of info?.formacao">
+        <h3 class="titulo">{{ curso?.curso }}</h3>
+        <p class="instituicao">{{ curso?.instituicao }}</p>
+        <p class="data">{{ curso?.['datainicial'] }} - {{ curso?.['datafinal'] }}</p>
+    </div>
+</div>

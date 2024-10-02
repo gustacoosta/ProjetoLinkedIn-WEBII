@@ -1,1 +1,5 @@
-<p>curriculo-experiencia works!</p>
+<div class="experiencia" *ngFor="let exp of info?.experiencia">
+    <h3>{{ exp?.empresa }}</h3>
+    <p>{{ exp?.datainicial }} - {{ exp?.datafinal }}</p>
+    <p>{{ exp?.descricao }}</p>
+</div>

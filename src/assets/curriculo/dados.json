@@ -3,47 +3,47 @@
         {
             "id": 1,
             "nome": "Gustavo Lima Costa",
-            "img-perfil": "",
-            "img-banner": "",
-            "titulo": "",
-            "sobre": "",
+            "imgPerfil": "https://static.wikia.nocookie.net/hunterxhunter/images/b/bd/HxH2011_EP147_Killua_Portrait.png",
+            "imgBanner": "https://static.wikia.nocookie.net/hunterxhunter/images/b/bd/HxH2011_EP147_Killua_Portrait.png",
+            "titulo": "Análise e Desenvolvimento de Sistemas",
+            "sobre": "Buscando minha primeira oportunidade como desenvolvedor! Atualmente cursando o 4º semestre de Análise e Desenvolvimento de Sistemas e o 1° semestre de Engenharia da Computação, adquiri experiência com Java, JavaScript, Python, MySQL, MongoDB e outras tecnologias ao longo do curso. Durante meu percurso acadêmico, destaco a criação de um jogo em Java e um site. Sou proativo, sempre em busca de desafios que impulsionem meu crescimento profissional. Estou aberto a oportunidades de aprendizado e colaboração, ansioso para contribuir e aprender no dinâmico ambiente da tecnologia.",
             "formacao": [
                 {
-                    "curso": "",
-                    "data-inicial": "",
-                    "data-final": "",
-                    "instituicao": ""
+                    "curso": "Análise e Desenvolvimento de Sistemas",
+                    "datainicial": "01/2023",
+                    "datafinal": "12/2024",
+                    "instituicao": "Faculdade SENAI de Tecnológia Mecatrônica"
                 }
             ],
             "experiencia": [
                 {
-                    "empresa": "",
-                    "data-inicial": "",
-                    "data-final": "",
-                    "descricao": ""
+                    "empresa": "Defensoria Pública do Estado de São Paulo",
+                    "datainicial": "03/2022",
+                    "datafinal": "12/2022",
+                    "descricao": "Realizava atendimento ao público, além de outras atividades administrativas."
                 }
             ]
         },
         {
             "id": 2,
             "nome": "Bruno Henrique Silva Santos",
-            "img-perfil": "",
-            "img-banner": "",
+            "imgPerfil": "",
+            "imgBanner": "",
             "titulo": "",
             "sobre": "",
             "formacao": [
                 {
                     "curso": "",
-                    "data-inicial": "",
-                    "data-final": "",
+                    "datainicial": "",
+                    "datafinal": "",
                     "instituicao": ""
                 }
             ],
             "experiencia": [
                 {
                     "empresa": "",
-                    "data-inicial": "",
-                    "data-final": "",
+                    "datainicial": "",
+                    "datafinal": "",
                     "descricao": ""
                 }
             ]
@@ -51,23 +51,23 @@
         {
             "id": 3,
             "nome": "Vitoria Lybnih da Silva",
-            "img-perfil": "",
-            "img-banner": "",
+            "imgPerfil": "",
+            "imgBanner": "",
             "titulo": "",
             "sobre": "",
             "formacao": [
                 {
                     "curso": "",
-                    "data-inicial": "",
-                    "data-final": "",
+                    "datainicial": "",
+                    "datafinal": "",
                     "instituicao": ""
                 }
             ],
             "experiencia": [
                 {
                     "empresa": "",
-                    "data-inicial": "",
-                    "data-final": "",
+                    "datainicial": "",
+                    "datafinal": "",
                     "descricao": ""
                 }
             ]
