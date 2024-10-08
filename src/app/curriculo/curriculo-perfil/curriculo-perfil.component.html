@@ -1,7 +1,7 @@
 <!-- https://www.linkedin.com/pulse/criando-e-consumindo-mock-com-angular-parte-01-jackson-neves/ -->
-<div>
-    <h2>{{ info?.nome }}</h2>
-    <!-- Ajustando o binding das imagens -->
+<div class="container">
     <img [src]="info?.imgPerfil" alt="" class="banner">
     <img [src]="info?.imgBanner" alt="" class="foto-perfil">
+    <h2 class="nome">{{ info?.nome }}</h2>
+    <p class="titulo">{{info?.titulo}}</p>
 </div>

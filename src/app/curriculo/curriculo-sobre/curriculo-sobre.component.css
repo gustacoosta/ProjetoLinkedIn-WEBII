@@ -1,0 +1,33 @@
+.resumo {
+    width: 100%;
+    text-align: justify;
+    position: relative;
+    margin-top: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 28px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+    padding: 10px;
+}
+
+hr {
+    width: 99%;
+    border: none; 
+    height: 1px;
+    background-color: #e0e0e0; 
+    margin-bottom: 15px; /
+}
+
+.texto {
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.5; 
+    padding: 15px;
+    text-indent: 20px;
+}
