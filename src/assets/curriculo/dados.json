@@ -3,8 +3,8 @@
         {
             "id": 1,
             "nome": "Gustavo Lima Costa",
-            "imgPerfil": "https://static.wikia.nocookie.net/hunterxhunter/images/b/bd/HxH2011_EP147_Killua_Portrait.png",
-            "imgBanner": "https://static.wikia.nocookie.net/hunterxhunter/images/b/bd/HxH2011_EP147_Killua_Portrait.png",
+            "imgPerfil": "https://media.licdn.com/dms/image/v2/D4D35AQFclP4YszojMQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1720139775397?e=1729033200&v=beta&t=h1QeDgcvtbizpscJ2kJjY9nbUczHUeQyyfVsTS1LMrI",
+            "imgBanner": "https://i.pinimg.com/736x/1b/b2/6d/1bb26d1aab272e4c3916ed45a60ca5e6.jpg",
             "titulo": "Análise e Desenvolvimento de Sistemas",
             "sobre": "Buscando minha primeira oportunidade como desenvolvedor! Atualmente cursando o 4º semestre de Análise e Desenvolvimento de Sistemas e o 1° semestre de Engenharia da Computação, adquiri experiência com Java, JavaScript, Python, MySQL, MongoDB e outras tecnologias ao longo do curso. Durante meu percurso acadêmico, destaco a criação de um jogo em Java e um site. Sou proativo, sempre em busca de desafios que impulsionem meu crescimento profissional. Estou aberto a oportunidades de aprendizado e colaboração, ansioso para contribuir e aprender no dinâmico ambiente da tecnologia.",
             "formacao": [
@@ -12,11 +12,12 @@
                     "curso": "Análise e Desenvolvimento de Sistemas",
                     "datainicial": "01/2023",
                     "datafinal": "12/2024",
-                    "instituicao": "Faculdade SENAI de Tecnológia Mecatrônica"
+                    "instituicao": "Faculdade SENAI de Tecnologia Mecatrônica"
                 }
             ],
             "experiencia": [
                 {
+                    "cargo": "Estagiário de Ensino Médio",
                     "empresa": "Defensoria Pública do Estado de São Paulo",
                     "datainicial": "03/2022",
                     "datafinal": "12/2022",
@@ -27,47 +28,49 @@
         {
             "id": 2,
             "nome": "Bruno Henrique Silva Santos",
-            "imgPerfil": "",
-            "imgBanner": "",
-            "titulo": "",
-            "sobre": "",
+            "imgPerfil": "https://media.licdn.com/dms/image/v2/D4D03AQEGs4yrFJJeog/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722535408577?e=1733961600&v=beta&t=Rhgp37biUpMWD8zqHvXuAol4hvWiXFmT-Wdpr4Gs6h0",
+            "imgBanner": "https://media.licdn.com/dms/image/v2/D4D16AQEt7umoC9BfRw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1697825995594?e=1733961600&v=beta&t=BKFjypc2LCKrNJT9d9bLMPLAJdIKb_VykUfAGFxvjZ0",
+            "titulo": "Desenvolvedor Back-End | Java, NodeJS | Spring | MySQL, MongoDB | Análise e Desenvolvimento de Sistemas - SENAI",
+            "sobre": "Olá. me chamo Bruno Henrique e sou um profissional de TI capacitado e versátil. com sólida experiência em serviços de TI, desenvolvimento de software, manutenção de hardware e suporte técnico. Possuo habilidades técnicas robustas combinadas com uma abordagem proativa para resolver problemas e fornecer soluções eficazes a empresa. Atualmente como desenvolvedor utilizo as seguintes tecnologias: - Java / Node - Framework Java Spring - Banco de dados relacionais (SQL) (Postgres, MySQL) e não relacionais(NoSQL) (MongoDB) Github: https://github.com/bruunoxz",
             "formacao": [
                 {
-                    "curso": "",
-                    "datainicial": "",
-                    "datafinal": "",
-                    "instituicao": ""
+                    "curso": "Análise e Desenvolvimento de Sistemas",
+                    "datainicial": "01/2023",
+                    "datafinal": "12/2024",
+                    "instituicao": "Faculdade SENAI de Tecnologia Mecatrônica"
                 }
             ],
             "experiencia": [
                 {
-                    "empresa": "",
-                    "datainicial": "",
-                    "datafinal": "",
-                    "descricao": ""
+                    "cargo": "Estagiário de TI",
+                    "empresa": "Sesi São Paulo",
+                    "datainicial": "04/2023",
+                    "datafinal": "o momento",
+                    "descricao": "- Desenvolvimento de aplicação web utilizando Javascript, Node e MySQL para contagem de alunos da unidade. - Manutenção de hardware (CPU, projetores, componentes eletrônicos). - Suporte ao cliente/usuário, orientando-os na utilização de hardwares e softwares. - Monitoração de sistemas e aplicações, recursos de rede."
                 }
             ]
         },
         {
             "id": 3,
             "nome": "Vitoria Lybnih da Silva",
-            "imgPerfil": "",
-            "imgBanner": "",
-            "titulo": "",
-            "sobre": "",
+            "imgPerfil": "https://media.licdn.com/dms/image/v2/D4D03AQHJpsXBcmgDPg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715106082121?e=1733961600&v=beta&t=SQuR2PQkMX9dCdZWT0VTswfrB0RXrMGWXxErM9Qw19g",
+            "imgBanner": "https://media.licdn.com/dms/image/v2/D4D16AQEC0Gzfzv9q2Q/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1715105025001?e=1733961600&v=beta&t=4lj6Fuo7eNprHhZZvhFtaodojP_-tKcctmc6KhfWW74",
+            "titulo": "Estudante de Análise e Desenvolvimento de Sistemas",
+            "sobre": "Iniciei minha jornada no curso de Análise e Desenvolvimento de Sistemas em 2023. Enquanto exploro o universo da programação, venho aprimorando minhas habilidades em diversas linguagens e buscando constantemente expandir meus conhecimentos através de cursos e projetos pessoais. 🔥 Meu portfolio: https://lybnih.github.io/Portfolio/ Com um perfil multidisciplinar sou entusiasmada para enfrentar desafios e colaborar em projetos inovadores. Busco oportunidades que me permitam aplicar minhas habilidades, crescer como profissional e contribuir para soluções tecnológicas que impactem positivamente. Hobbies: - Tocar Viola Clássica - Games - Doramas",
             "formacao": [
                 {
-                    "curso": "",
-                    "datainicial": "",
-                    "datafinal": "",
-                    "instituicao": ""
+                    "curso": "Análise e Desenvolvimento de Sistemas",
+                    "datainicial": "01/2023",
+                    "datafinal": "12/2024",
+                    "instituicao": "Faculdade SENAI de Tecnologia Mecatrônica"
                 }
             ],
             "experiencia": [
                 {
-                    "empresa": "",
-                    "datainicial": "",
-                    "datafinal": "",
+                    "cargo": "Estagiário de TI",
+                    "empresa": "Sesi São Paulo",
+                    "datainicial": "04/2023",
+                    "datafinal": "o momento",
                     "descricao": ""
                 }
             ]
