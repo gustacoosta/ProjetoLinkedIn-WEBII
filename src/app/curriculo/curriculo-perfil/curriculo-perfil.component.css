@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; 
+    position: relative; 
+}
+
+.banner {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0; 
+}
+
+.foto-perfil {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    border: 3px solid white;
+    position: absolute; 
+    top: 100px;
+    left: 15px;
+    margin: 0;
+}
+
+.nome {
+    font-size: 30px; 
+    font-weight: bold; 
+    margin: 5px 0 10px 0;
+    color: #000000;
+}
+
+.titulo {
+    font-size: 18px; 
+    color: #3b3b3b; 
+    margin-top: 2px; 
+}
