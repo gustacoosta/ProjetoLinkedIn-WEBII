@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
@@ -9,6 +8,7 @@ import { CurriculoPerfilComponent } from './curriculo/curriculo-perfil/curriculo
 import { CurriculoSobreComponent } from './curriculo/curriculo-sobre/curriculo-sobre.component';
 import { CurriculoExperienciaComponent } from './curriculo/curriculo-experiencia/curriculo-experiencia.component';
 import { CurriculoFormacaoComponent } from './curriculo/curriculo-formacao/curriculo-formacao.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,11 +22,10 @@ import { CurriculoFormacaoComponent } from './curriculo/curriculo-formacao/curri
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
