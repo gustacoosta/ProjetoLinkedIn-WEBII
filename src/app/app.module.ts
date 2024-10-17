@@ -9,6 +9,8 @@ import { CurriculoSobreComponent } from './curriculo/curriculo-sobre/curriculo-s
 import { CurriculoExperienciaComponent } from './curriculo/curriculo-experiencia/curriculo-experiencia.component';
 import { CurriculoFormacaoComponent } from './curriculo/curriculo-formacao/curriculo-formacao.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FeedComponent } from './feed/feed.component';
+import { AddPostComponent } from './feed/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     CurriculoPerfilComponent,
     CurriculoSobreComponent,
     CurriculoExperienciaComponent,
-    CurriculoFormacaoComponent
+    CurriculoFormacaoComponent,
+    FeedComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
