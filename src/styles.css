@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
 body{
-    background-color: aliceblue;
+    background-color: #f4f2ee;
+    height: 100vh;
+    margin: 0;
+    scrollbar-width: thin;
 }
