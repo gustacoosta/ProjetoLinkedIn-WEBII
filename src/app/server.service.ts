@@ -7,10 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class ServerService {
   private jsonURL = 'assets/curriculo/dados.json';
+  private feedjsonURL = 'assets/feed/dados.json';
 
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<any[]> {  
     return this.http.get<any[]>(this.jsonURL); 
+  }
+
+  getPosts(): Observable<any[]> {  
+    return this.http.get<any[]>(this.feedjsonURL);  
   }
 }

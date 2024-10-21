@@ -1,0 +1,23 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "author": {
+          "nome": "Mariana Rodrigues Padilha",
+          "imgPerfil": "assets/perfil1.jpeg"
+        },
+        "content": "Hoje, tive a oportunidade de realizar um workshop junto com um colega para ensinar crianças do Centro de Convivência sobre Ada Lovelace e o conceito de algoritmos através de brincadeiras interativas. Além disso, apresentei um...",
+        "image": "assets/post1.jpeg"
+      },
+      {
+        "id": 2,
+        "author": {
+          "nome": "Kawan Xavier",
+          "imgPerfil": "assets/perfil2.jpg" 
+        },
+        "content": "Estou aprendendo Angular e estou adorando a experiência! 🚀 O que vocês acham do framework?",
+        "image": "assets/post2.jpg"
+      }
+    ]
+  }
+  
