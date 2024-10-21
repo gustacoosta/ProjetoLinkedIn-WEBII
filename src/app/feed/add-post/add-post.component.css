@@ -1,0 +1,53 @@
+.novoPost {
+    padding: 100px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface-novoPost {
+    width: 60%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    overflow: hidden;
+    width: 95%;
+    max-width: 900px; 
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+button p {
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o ícone de imagem */
+.addImagem {
+    align-items: center;
+    display: flex;
+}
+
+.addImagem i {
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: color 0.3s ease;
+}
+
+.addImagem i:hover {
+    color: #005082; /* Cor do ícone ao passar o mouse */
+}
