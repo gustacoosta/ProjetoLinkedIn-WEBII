@@ -11,8 +11,8 @@ export class ServerService {
 
   constructor(private http: HttpClient) {}
 
-  getUsers(): Observable<any[]> {  
-    return this.http.get<any[]>(this.jsonURL); 
+  getUsers(): Observable<any> {  
+    return this.http.get(this.jsonURL); 
   }
 
   getPosts(): Observable<any[]> {  

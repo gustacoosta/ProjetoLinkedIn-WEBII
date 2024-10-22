@@ -123,4 +123,10 @@ header a {
     margin-left: 2px; 
     vertical-align: middle; 
 }
+
+.btt {
+    color: 'black';
+    padding: 0;
+    margin: 0;
+}
 /*acaba menu do feed*/
