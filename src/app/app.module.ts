@@ -11,6 +11,11 @@ import { CurriculoFormacaoComponent } from './curriculo/curriculo-formacao/curri
 import { HttpClientModule } from '@angular/common/http';
 import { FeedComponent } from './feed/feed.component';
 import { AddPostComponent } from './feed/add-post/add-post.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -22,14 +27,20 @@ import { AddPostComponent } from './feed/add-post/add-post.component';
     CurriculoExperienciaComponent,
     CurriculoFormacaoComponent,
     FeedComponent,
-    AddPostComponent
+    AddPostComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    RouterModule,
+    MatButtonModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
