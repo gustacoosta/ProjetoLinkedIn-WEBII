@@ -1,13 +1,15 @@
 <header>
   <nav>
     <ul>
-      <li *ngFor="let user of dados" (click)="selectUser(user)">
+      <!-- ngFor para listar os usuários -->
+      <li *ngFor="let user of dados; let i = index" (click)="selectUser(user, i)">
         {{ user.nome }}
       </li>
     </ul>
   </nav>
 </header>
 
+<!-- Exibe as informações do usuário selecionado -->
 <div *ngIf="selectedUser">
   <h1>{{ selectedUser.nome }}</h1>
   <p><strong>Email:</strong> {{ selectedUser.titulo }}</p>
@@ -15,7 +17,8 @@
 
 <div class="container">
   <app-curriculo-perfil></app-curriculo-perfil>
-  <app-curriculo-sobre></app-curriculo-sobre>
+  <!-- Passa o índice do usuário selecionado para o componente CurriculoSobre -->
+  <app-curriculo-sobre [userIndex]="selectedUserIndex"></app-curriculo-sobre>
   <app-curriculo-formacao></app-curriculo-formacao>
   <app-curriculo-experiencia></app-curriculo-experiencia>
 </div>

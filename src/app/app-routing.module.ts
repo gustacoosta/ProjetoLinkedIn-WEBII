@@ -6,7 +6,7 @@ import { CurriculoComponent } from './curriculo/curriculo.component';
 const routes: Routes = [
   { path: '', redirectTo: 'feed', pathMatch: 'full' },
   { path: 'feed', component: FeedComponent },
-  { path: 'curriculo', component: CurriculoComponent },
+  { path: 'curriculo/:id', component: CurriculoComponent },
 ];
 
 @NgModule({

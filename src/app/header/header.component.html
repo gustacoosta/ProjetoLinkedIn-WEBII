@@ -15,38 +15,34 @@
 
         <nav class="menu" id="menu">
             <ul>
-                <li><a href="#"><i class="bi bi-house-fill"></i>
+                <li><a [routerLink]="['/feed']"><i class="bi bi-house-fill"></i>
                         <p>Início</p>
                     </a></li>
                 <li><a href="#"><i class="bi bi-chat-dots"></i>
                         <p>Diferentão</p>
                     </a></li>
                 <li class="perfil">
-                    
-                        <i class="bi bi-person-circle"></i>
-                        <div class="perfil2">
-                            <div class="butproj">
-                                <button mat-button [matMenuTriggerFor]="menu"> Selecione a página</button>
-                                <mat-menu #menu="matMenu">
-                                    <button mat-menu-item routerLink='/feed' routerLinkActivate='active'> Demon
-                                        Slayer</button>
-                                    <button mat-menu-item routerLink='/curriculo' routerLinkActivate='active'> Ink
-                                        Vibes</button>
-                                    <button mat-menu-item routerLink='/' routerLinkActivate='active'> Início</button>
-                                </mat-menu>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                    <i class="bi bi-person-circle"></i>
+                    <div class="perfil2">
+                        <button class="btt" mat-button [matMenuTriggerFor]="menu"> Perfil</button>
+                        <mat-menu class="btt" #menu="matMenu">
+                            <button mat-menu-item [routerLink]="['/curriculo', 0]" routerLinkActivate='active'> Gustavo Costa</button>
+                            <button mat-menu-item [routerLink]="['/curriculo', 1]" routerLinkActivate='active'> Bruno Henrique</button>
+                            <button mat-menu-item [routerLink]="['/curriculo', 2]" routerLinkActivate='active'> Vitoria Lybnih</button>
+                        </mat-menu>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                             class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                             <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                         </svg>
                     </div>
-                
-            </li>
-            
-        </ul>
-    </nav><!--menu-->
-    
-</div><!--Interface-->
+
+                </li>
+
+            </ul>
+        </nav><!--menu-->
+
+    </div><!--Interface-->
 </header><!--FIM HEADER-->
 <router-outlet></router-outlet>
