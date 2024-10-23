@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import * as data from '../../../assets/curriculo/dados.json'; // Importa o JSON
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-curriculo-sobre',
@@ -7,16 +8,22 @@ import * as data from '../../../assets/curriculo/dados.json'; // Importa o JSON
   styleUrls: ['./curriculo-sobre.component.css']
 })
 export class CurriculoSobreComponent {
-  @Input() userIndex?: number; // Recebe o índice do usuário
+  dados: any = (data as any).default;
+  selectedUser: any;
+  userId: string | null = null;
 
-  // Getter que acessa os dados do JSON com base no índice
-  get info() {
-    const index = this.userIndex ?? 0; // Usa 0 se userIndex for undefined
-    // Verifica se o índice existe no JSON
-    if (index >= 0 && index < data.pessoa.length) {
-      return data.pessoa[index];
-    }
-    // Fallback se o índice não for válido
-    return data.pessoa[0];
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.userId = params.get('id');
+      console.log(this.userId);
+
+      if (this.userId && this.dados.pessoa[this.userId]) {
+        this.selectedUser = this.dados.pessoa[this.userId];
+      } else {
+        console.error("Usuário não encontrado ou ID inválido");
+      }
+    });
   }
 }
