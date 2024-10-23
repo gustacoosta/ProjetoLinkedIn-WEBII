@@ -3,8 +3,8 @@
         {
             "id": 1,
             "nome": "Gustavo Lima Costa",
-            "imgPerfil": "https://media.licdn.com/dms/image/v2/D4D35AQFclP4YszojMQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1720139775397?e=1729033200&v=beta&t=h1QeDgcvtbizpscJ2kJjY9nbUczHUeQyyfVsTS1LMrI",
-            "imgBanner": "https://i.pinimg.com/736x/1b/b2/6d/1bb26d1aab272e4c3916ed45a60ca5e6.jpg",
+            "imgPerfil": "https://media.licdn.com/dms/image/v2/D4D03AQF7zGsDBqkvTw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677262495344?e=1735171200&v=beta&t=7dL4qahB4q0gNNtArPpGmJbZCxMzi2W99YC_RRTuP0U",
+            "imgBanner": "https://media.licdn.com/dms/image/v2/D4D16AQGfiMu71GK_gw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1677262649826?e=1735171200&v=beta&t=6zuKoPAz89Pt6aEsh3ECckypf-xOcbsB-53AWCNHpGc",
             "titulo": "Análise e Desenvolvimento de Sistemas",
             "sobre": "Buscando minha primeira oportunidade como desenvolvedor! Atualmente cursando o 4º semestre de Análise e Desenvolvimento de Sistemas e o 1° semestre de Engenharia da Computação, adquiri experiência com Java, JavaScript, Python, MySQL, MongoDB e outras tecnologias ao longo do curso. Durante meu percurso acadêmico, destaco a criação de um jogo em Java e um site. Sou proativo, sempre em busca de desafios que impulsionem meu crescimento profissional. Estou aberto a oportunidades de aprendizado e colaboração, ansioso para contribuir e aprender no dinâmico ambiente da tecnologia.",
             "formacao": [
