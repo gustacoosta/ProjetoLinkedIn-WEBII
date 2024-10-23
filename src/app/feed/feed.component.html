@@ -1,21 +1,21 @@
 <app-add-post></app-add-post>
 
-<section *ngFor="let post of posts" class="post">
+<section class="post">
 
     <div class="interface-post">
-        
+
             <div class="user-info">
-                <img [src]="post.author.imgPerfil" class="perfil-foto">
+                <img src="assets/perfil1.jpeg" class="perfil-foto">
                 <div class="user-nome">
-                    <h3>{{ post.author.nome }}</h3>
+                    <h3>Mariana Rodrigues Padilha</h3>
                 </div>
             </div>
             <div class="post-content">
                 <p>
-                    {{ post.content }}
+                    Hoje, tive a oportunidade de realizar um workshop junto com um colega para ensinar crianças do Centro de Convivência sobre Ada Lovelace e o conceito de algoritmos através de brincadeiras interativas. Além disso, apresentei um...
                 </p>
-                <div class="post-images" *ngIf="post.image">
-                    <img [src]="post.image" class="post-image">
+                <div class="post-images">
+                    <img src="assets/post1.jpeg" alt="Imagem do workshop" class="post-image">
                 </div>
             </div>
             <div class="post-actions">
@@ -25,5 +25,4 @@
             </div>
    
       </div>
-
 </section>
