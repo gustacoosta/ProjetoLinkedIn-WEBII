@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import * as data from '../../../assets/curriculo/dados.json'; // Importa o JSON
+import * as data from '../../../assets/curriculo/dados.json'; 
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

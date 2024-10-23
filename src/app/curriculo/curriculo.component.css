@@ -2,7 +2,8 @@
     display: grid; 
     justify-content: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto;
+    padding-bottom: 50px;
 }
 
 header {

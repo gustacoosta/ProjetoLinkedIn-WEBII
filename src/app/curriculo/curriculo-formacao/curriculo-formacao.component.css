@@ -29,6 +29,10 @@ hr {
     padding: 15px;
 }
 
+.nome { 
+    font-size: 22px;
+}
+
 .nome, .instituicao, .data {
     margin: 5px;
 }
