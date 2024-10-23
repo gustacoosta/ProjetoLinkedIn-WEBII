@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ServerService } from '../server.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-curriculo',
@@ -8,29 +7,18 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./curriculo.component.css']
 })
 export class CurriculoComponent implements OnInit {
-  dados: any[] = [];  // Lista de pessoas será carregada aqui
+  dados: any[] = [];
   selectedUser: any;
-  selectedUserIndex: number = 0; 
 
-  constructor(private userService: ServerService, private route: ActivatedRoute) { }
+  constructor(private userService: ServerService) { }
 
   ngOnInit(): void {
-    const userIndex = this.route.snapshot.paramMap.get('id'); // Pega o índice da URL
-
     this.userService.getUsers().subscribe((data) => {
-      this.dados = data.pessoa; // Acessa a chave 'pessoa' do JSON
-
-      if (userIndex !== null) {
-        this.selectedUserIndex = +userIndex;
-        this.selectedUser = this.dados[this.selectedUserIndex]; 
-      } else {
-        this.selectedUser = this.dados[0]; // Usuário padrão
-      }
+      this.dados = data; 
+      this.selectedUser = this.dados[0];  
     });
   }
-
-  selectUser(user: any, index: number) {
-    this.selectedUser = user;
-    this.selectedUserIndex = index;
+  selectUser(data: any) {
+    this.selectedUser = data;
   }
 }

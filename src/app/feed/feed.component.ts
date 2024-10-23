@@ -8,6 +8,9 @@ import { Post } from '../post.model';
   styleUrls: ['./feed.component.css']
 })
 export class FeedComponent implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   posts: Post[] = [
     {
       author: 'Kawan Xavier',

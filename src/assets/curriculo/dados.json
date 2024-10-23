@@ -13,6 +13,12 @@
                     "datainicial": "01/2023",
                     "datafinal": "12/2024",
                     "instituicao": "Faculdade SENAI de Tecnologia Mecatrônica"
+                },
+                {
+                    "curso": "Engenharia da Computação",
+                    "datainicial": "07/2024",
+                    "datafinal": "06/2029",
+                    "instituicao": "Universidade Virtual do Estado de São Paulo"
                 }
             ],
             "experiencia": [
@@ -22,6 +28,13 @@
                     "datainicial": "03/2022",
                     "datafinal": "12/2022",
                     "descricao": "Realizava atendimento ao público, além de outras atividades administrativas."
+                },
+                {
+                    "cargo": "Estagiário de TI",
+                    "empresa": "Sesi",
+                    "datainicial": "01/2023",
+                    "datafinal": "o momento",
+                    "descricao": "Suporte técnico e apoio aos docentes."
                 }
             ]
         },
