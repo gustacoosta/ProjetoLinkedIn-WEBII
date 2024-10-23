@@ -13,20 +13,21 @@
     font-size: 28px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     padding: 10px;
 }
 
 hr {
     width: 99%;
-    border: none;
+    margin: auto;
+    border: none; 
     height: 1px;
-    background-color: #e0e0e0;
-    margin-bottom: 5px;
+    background-color: #e0e0e0; 
 }
 
 .conteudo {
-    padding: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .nome { 
