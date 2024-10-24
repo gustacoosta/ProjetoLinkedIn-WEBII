@@ -1,9 +1,12 @@
+
+
+
 <app-add-post></app-add-post>
 
 <section class="post">
   <div class="interface-post" *ngFor="let info of feed">
     <div class="user-info">
-      <img src="assets/perfil1.jpeg" class="perfil-foto">
+      <img [src]="info?.perfil" alt="Imagem do post" class="perfil-foto" *ngIf="info?.perfil !== 'null'">
       <div class="user-nome">
         <h3>{{ info?.autor }}</h3>
       </div>
@@ -17,9 +20,8 @@
     </div>
 
     <div class="post-actions">
-      <button><i class="bi bi-hand-thumbs-up"></i> Gostei</button>
-      <button><i class="bi bi-chat-dots"></i> Comentar</button>
-      <button><i class="bi bi-send"></i> Compartilhar</button>
-    </div>
+      <a href="#" class="button"><i class="bi bi-hand-thumbs-up"></i> Gostei</a>
+      <a href="#" class="button"><i class="bi bi-send"></i> Compartilhar</a>
+    </div>    
   </div>
 </section>

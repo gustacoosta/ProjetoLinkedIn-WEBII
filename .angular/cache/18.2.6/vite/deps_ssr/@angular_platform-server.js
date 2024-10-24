@@ -4,6 +4,7 @@ import {
   provideNoopAnimations
 } from "./chunk-AFRHKDF4.js";
 import "./chunk-VFSKZ5KU.js";
+import "./chunk-DIPN6YNZ.js";
 import {
   BrowserDomAdapter,
   BrowserModule,
@@ -14,7 +15,6 @@ import {
   HTTP_ROOT_INTERCEPTOR_FNS,
   HttpClientModule
 } from "./chunk-OIOAX3RD.js";
-import "./chunk-DIPN6YNZ.js";
 import {
   DOCUMENT,
   NullViewportScroller,
