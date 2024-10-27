@@ -18,4 +18,5 @@ export class ServerService {
   getPosts(): Observable<any> {
     return this.http.get(this.postURL);
   }
+  
 }

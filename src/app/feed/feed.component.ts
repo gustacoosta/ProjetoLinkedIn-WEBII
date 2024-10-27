@@ -8,4 +8,9 @@ import * as data from '../../assets/feed/post.json';
 })
 export class FeedComponent {
   feed = data.posts;
+
+  toggleLike(event: Event, info: any) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    info.liked = !info.liked; // Alterna o estado do "gostei"
+  }
 }

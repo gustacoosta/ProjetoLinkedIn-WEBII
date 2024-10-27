@@ -20,7 +20,9 @@
     </div>
 
     <div class="post-actions">
-      <a href="#" class="button"><i class="bi bi-hand-thumbs-up"></i> Gostei</a>
+      <a href="#" class="button" (click)="toggleLike($event, info)" [ngClass]="{'liked': info.liked}">
+        <i class="bi" [ngClass]="info.liked ? 'bi-hand-thumbs-up-fill' : 'bi-hand-thumbs-up'"></i> Gostei
+      </a>
       <a href="#" class="button"><i class="bi bi-send"></i> Compartilhar</a>
     </div>    
   </div>

@@ -76,8 +76,15 @@
 }
 
 .button i {
-    margin-right: 8px;
-    font-size: 18px;
+  margin-right: 8px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.button.liked i {
+  transform: scale(1.4);
+  color: #3700ff; 
+  background-color: #fff; 
 }
 
 .button:hover {
@@ -87,4 +94,9 @@
 
 .button:active {
     background-color: #e0e0e0;
+}
+
+.button.liked {
+  background-color: #fff; 
+  color: #000000;              
 }

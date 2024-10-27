@@ -5,14 +5,16 @@
         "autor": "Kawan Xavier",
         "titulo": "Desenvolvedor Back-End",
         "conteudo": "BR: O Brasil tem hoje 10 milhões de pessoas surdas. Imagine aprender Libras ou usar uma ferramenta para conversar com elas. Isso não apenas promove a inclusão, mas também enriquece nossas interações cotidianas. Ao quebrar barreiras de comunicação, criamos um ambiente mais acolhedor e diversificado para todos.",
-        "imagem": "https://curtamais.com.br/goiania/wp-content/uploads/sites/2/2019/09/9b51e1e2c32b4bcee6a146a4c619f595.jpg"
+        "imagem": "https://curtamais.com.br/goiania/wp-content/uploads/sites/2/2019/09/9b51e1e2c32b4bcee6a146a4c619f595.jpg",
+        "liked": false
       },
       {
         "perfil":"https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/06/bielorrussia.webp?w=495",
         "autor": "Paulo Castellani",
         "titulo": "Vagas de TI",
         "conteudo": "Atuando como Job Hunter, estou aqui para oferecer suporte personalizado em sua jornada rumo ao próximo passo em sua carreira. Possuo experiência auxiliando profissionais a alcançarem seus objetivos, estando comprometido em entender suas necessidades e potencialidades. Juntos, vamos identificar as oportunidades mais adequadas e desenvolver estratégias eficazes para destacar seu perfil no mercado. Meu objetivo é guiá-lo em cada etapa do processo, garantindo que você se sinta confiante e preparado para o sucesso.",
-        "imagem": "https://blog.peixe30.com/wp-content/uploads/2020/09/Job_hunter_orientando_profissional-1024x576.jpg"
+        "imagem": "https://blog.peixe30.com/wp-content/uploads/2020/09/Job_hunter_orientando_profissional-1024x576.jpg",
+        "liked": false
       }
     ]
   }

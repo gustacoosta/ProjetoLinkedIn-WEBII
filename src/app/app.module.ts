@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddPostDialogComponent } from './feed/add-post/add-post-dialog/add-post-dialog';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     CurriculoFormacaoComponent,
     FeedComponent,
     AddPostComponent,
+    AddPostDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatButtonModule,
     MatMenuModule,
     BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [
     provideAnimationsAsync()

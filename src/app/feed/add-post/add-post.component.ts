@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddPostDialogComponent } from './add-post-dialog/add-post-dialog';
 
 @Component({
   selector: 'app-add-post',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AddPostComponent {
 
+  constructor(public dialog: MatDialog) {}
+
+  openAddPostDialog(): void {
+    this.dialog.open(AddPostDialogComponent, {
+      width: '90%',
+
+    });
+  }
 }
