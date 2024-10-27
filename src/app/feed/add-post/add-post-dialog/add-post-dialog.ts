@@ -10,6 +10,8 @@ export class AddPostDialogComponent {
   selectedImage: File | null = null;
   imagePreview: string | null = null; 
 
+
+  //puxa imagem
   onImageSelected(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files.length > 0) {

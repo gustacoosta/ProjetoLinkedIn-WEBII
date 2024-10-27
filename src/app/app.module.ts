@@ -18,6 +18,8 @@ import { RouterModule } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddPostDialogComponent } from './feed/add-post/add-post-dialog/add-post-dialog';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { AddPostDialogComponent } from './feed/add-post/add-post-dialog/add-post
     MatMenuModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    FormsModule,
   ],
   providers: [
     provideAnimationsAsync()
