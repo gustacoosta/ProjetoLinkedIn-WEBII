@@ -25,7 +25,7 @@ export class ServerService {
 
   getPosts(): Observable<Post[]> {
     const jsonPosts = require('../assets/feed/post.json').posts; // Carrega posts do JSON
-  
+
     if (this.isLocalStorageAvailable()) {
       const storedPosts = localStorage.getItem('posts');
       const localPosts = storedPosts ? JSON.parse(storedPosts) : [];

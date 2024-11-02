@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServerService } from '../server.service';
 import { Post } from '../post.model'; // ajuste conforme necessário
-import { AddPostDialogComponent } from './add-post/add-post-dialog/add-post-dialog';
+
 
 @Component({
   selector: 'app-feed',
@@ -19,9 +19,9 @@ export class FeedComponent implements OnInit {
   
   loadFeed() {
     this.serverService.getPosts().subscribe(posts => {
-      this.feed = posts;
+      this.feed = posts.reverse(); // Inverte a lista para que os mais recentes fiquem no topo
     });
-  }  
+  } 
   
   onPostAdded(newPost: Post) {
     this.feed.unshift(newPost); // Adiciona o novo post no topo do feed
@@ -32,4 +32,5 @@ export class FeedComponent implements OnInit {
     info.liked = !info.liked; 
     this.serverService.savePosts(this.feed); // Atualiza o localStorage ao curtir/descurtir
   }
+  
 }
