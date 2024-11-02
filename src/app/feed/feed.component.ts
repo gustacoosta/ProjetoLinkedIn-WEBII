@@ -15,31 +15,40 @@ export class FeedComponent implements OnInit {
   ngOnInit() {
     this.loadFeed();
     this.serverService.getPostsObservable().subscribe(posts => {
-      this.feed = posts.reverse(); // Atualizar o feed
+      this.feed = posts.reverse(); // Não precisa mais usar reverse()
     });
   }
   
   loadFeed() {
     this.serverService.getPosts().subscribe(posts => {
-      this.feed = posts.reverse(); 
+      this.feed = posts.reverse(); // Não precisa mais usar reverse()
     });
-  } 
+  }
   
   onPostAdded(newPost: Post) {
-    this.feed.unshift(newPost); //add post
+    this.feed.unshift(newPost); // Adiciona o post no topo do feed
+    // Atualiza o localStorage com o novo post
+    this.serverService.savePosts(this.feed);
   }
 
   toggleLike(event: Event, info: any) {
-    event.preventDefault(); 
-    info.liked = !info.liked; 
-    // this.serverService.savePosts(this.feed); 
+    event.preventDefault();
+    info.liked = !info.liked;
+    this.serverService.savePosts(this.feed); 
+    // Atualiza o array feed no componente 
+    this.feed = this.serverService.loadPostsFromLocalStorage(); 
   }
 
   deletePost(event: Event, post: Post) {
     event.preventDefault(); // Impede o recarregamento da página
-    
-    // Remove o post do feed
-    this.feed = this.feed.filter(p => p !== post); // Filtra o post a ser excluído
+  
+    // Encontra o índice do post a ser excluído
+    const index = this.feed.indexOf(post); 
+  
+    // Remove o post do array
+    if (index > -1) {
+      this.feed.splice(index, 1); // Remove o post do array feed
+    }
   
     // Atualiza o localStorage
     this.serverService.savePosts(this.feed);

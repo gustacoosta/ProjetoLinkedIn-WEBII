@@ -45,4 +45,9 @@ export class ServerService {
   private isLocalStorageAvailable(): boolean {
     return typeof localStorage !== 'undefined';
   }
+
+  loadPostsFromLocalStorage(): Post[] {
+    const storedPosts = localStorage.getItem('posts');
+    return storedPosts ? JSON.parse(storedPosts) : [];
+  }
 }
