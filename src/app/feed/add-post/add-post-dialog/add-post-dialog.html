@@ -1,17 +1,11 @@
 <div class="modal-container">
   <div class="modal-header">
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-    </svg>
-
-    <h3>Vitória | Gustavo | Bruno</h3>
+    <h3>Adicionar Post</h3>
   </div>
 
   <div class="modal-body">
-    <textarea placeholder="Sobre o que você quer falar?" class="input-texto"></textarea>
-    <div *ngIf="selectedImage">
+    <textarea placeholder="Sobre o que você quer falar?" [(ngModel)]="newPostContent" class="input-texto"></textarea>
+    <div *ngIf="imagePreview">
       <img [src]="imagePreview" alt="Prévia da imagem" class="image-preview" />
     </div>
   </div>
@@ -21,10 +15,10 @@
       <button class="icon-button" (click)="fileInput.click()">
         <i class="bi bi-image"></i>
       </button>
-
-    <input type="file" #fileInput (change)="onImageSelected($event)" accept="image/*" style="display: none;">
+      <input type="file" #fileInput (change)="onImageSelected($event)" accept="image/*" style="display: none;">
     </div>
 
-    <button class="post-button" disabled>Publicar</button>
+    <button class="post-button" (click)="addPost()" [disabled]="!newPostContent">Publicar</button>
   </div>
 </div>
+

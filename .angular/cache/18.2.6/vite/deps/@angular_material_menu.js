@@ -5,7 +5,14 @@ import {
   OverlayConfig,
   OverlayModule,
   TemplatePortal
-} from "./chunk-NO6Q33EJ.js";
+} from "./chunk-RSRC2F36.js";
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-NFA35RI6.js";
 import {
   DOWN_ARROW,
   Directionality,
@@ -24,18 +31,11 @@ import {
   isFakeMousedownFromScreenReader,
   isFakeTouchstartFromScreenReader,
   normalizePassiveListenerOptions
-} from "./chunk-T7XUCVIR.js";
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-RLSG5BAD.js";
+} from "./chunk-PLUIRY4G.js";
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-WFVL2GWC.js";
+} from "./chunk-ZKJLMIWG.js";
 import {
   ApplicationRef,
   ChangeDetectionStrategy,
@@ -57,27 +57,14 @@ import {
   Output,
   QueryList,
   Self,
-  Subject,
-  Subscription,
   TemplateRef,
   ViewChild,
   ViewContainerRef,
   ViewEncapsulation$1,
-  __spreadProps,
-  __spreadValues,
   afterNextRender,
-  asapScheduler,
   booleanAttribute,
-  delay,
-  filter,
   inject,
-  merge,
-  of,
   setClassMetadata,
-  startWith,
-  switchMap,
-  take,
-  takeUntil,
   ɵɵInputTransformsFeature,
   ɵɵProvidersFeature,
   ɵɵStandaloneFeature,
@@ -108,7 +95,22 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-NB4JYRIU.js";
+} from "./chunk-KJZSCXEF.js";
+import {
+  Subject,
+  Subscription,
+  __spreadProps,
+  __spreadValues,
+  asapScheduler,
+  delay,
+  filter,
+  merge,
+  of,
+  startWith,
+  switchMap,
+  take,
+  takeUntil
+} from "./chunk-2CVCC5YH.js";
 
 // node_modules/@angular/material/fesm2022/menu.mjs
 var _c0 = ["mat-menu-item", ""];
