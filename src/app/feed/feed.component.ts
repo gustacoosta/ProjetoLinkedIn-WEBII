@@ -15,20 +15,21 @@ export class FeedComponent implements OnInit {
   ngOnInit() {
     this.loadFeed();
     this.serverService.getPostsObservable().subscribe(posts => {
-      this.feed = posts.reverse(); // Não precisa mais usar reverse()
+      this.feed = posts.reverse(); 
     });
   }
   
   loadFeed() {
     this.serverService.getPosts().subscribe(posts => {
-      this.feed = posts.reverse(); // Não precisa mais usar reverse()
+      this.feed = posts.reverse(); 
+      this.serverService.savePosts(this.feed); //Adicionei para não sumir os posts do json
     });
   }
   
   onPostAdded(newPost: Post) {
     this.feed.unshift(newPost); // Adiciona o post no topo do feed
     // Atualiza o localStorage com o novo post
-    this.serverService.savePosts(this.feed);
+    this.serverService.savePosts(this.feed); 
   }
 
   toggleLike(event: Event, info: any) {
@@ -52,6 +53,7 @@ export class FeedComponent implements OnInit {
   
     // Atualiza o localStorage
     this.serverService.savePosts(this.feed);
+    this.feed = this.serverService.loadPostsFromLocalStorage(); //Adicionei para não trocar a sequencia dos posts
   }
   
 }

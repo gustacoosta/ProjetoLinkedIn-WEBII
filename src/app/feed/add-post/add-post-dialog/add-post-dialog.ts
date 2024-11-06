@@ -34,7 +34,7 @@ export class AddPostDialogComponent implements OnInit {
     // Adiciona o post ao localStorage
     const existingPosts: Post[] = JSON.parse(localStorage.getItem('posts') || '[]'); // Obtém os posts existentes
     existingPosts.push(newPost); // Adiciona post à lista
-    this.serverService.savePosts(existingPosts); // Salva posts atualizados no 
+    this.serverService.savePosts(existingPosts); 
   
     this.clearForm();
     this.postAdded.emit(newPost);

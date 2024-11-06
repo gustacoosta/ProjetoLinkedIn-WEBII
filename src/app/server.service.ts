@@ -34,7 +34,7 @@ export class ServerService {
       this.postsSubject.next(allPosts);
       return of(allPosts); 
     }
-  
+    
     return of(jsonPosts); 
   }
 
