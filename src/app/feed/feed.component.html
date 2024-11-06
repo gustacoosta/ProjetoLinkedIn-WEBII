@@ -17,14 +17,15 @@
     </div>
 
     <div class="post-actions">
-      <a href="#" class="button" (click)="toggleLike($event, info)" [ngClass]="{'liked': info.liked}">
+      <a href="#" class="button like-button" (click)="toggleLike($event, info)" [ngClass]="{'liked': info.liked}">
         <i class="bi" [ngClass]="info.liked ? 'bi-hand-thumbs-up-fill' : 'bi-hand-thumbs-up'"></i> Gostei
       </a>
+      
       <a [href]="'mailto:?subject=Confira este post!&body=Veja este post interessante: https://Linkdln/post.com'" class="button">
         <i class="bi bi-send"></i> Compartilhar
       </a>
 
-      <a href="#" class="button" (click)="deletePost($event, info)">
+      <a href="#" class="button delete-button" (click)="deletePost($event, info)">
         <i class="bi bi-trash"></i> Excluir
       </a>
         

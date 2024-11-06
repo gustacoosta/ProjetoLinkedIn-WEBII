@@ -62,6 +62,7 @@
     justify-content: space-between;
 }
 
+/*botao geral*/
 .button {
     display: flex;
     align-items: center;
@@ -81,22 +82,29 @@
   transition: transform 0.3s ease;
 }
 
-.button.liked i {
-  transform: scale(1.4);
-  color: #3700ff; 
-  background-color: #fff; 
-}
-
 .button:hover {
-    background-color: #f5f5f5;
-    color: #3700ff;
+  color: #3700ff;
 }
 
 .button:active {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
+}
+
+/*like*/
+.button.liked i {
+  transform: scale(1.4);
+  color: #3700ff; 
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .button.liked {
   background-color: #fff; 
   color: #000000;              
+}
+
+/* Botão de Excluir (Vermelho) */
+
+.delete-button:hover {
+  background-color: #f5f5f5;
+  color: #ff5e5e;
 }
