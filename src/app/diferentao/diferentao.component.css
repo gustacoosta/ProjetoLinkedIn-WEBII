@@ -1,5 +1,20 @@
+.diferentao{
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    margin: 0 60px 30px 60px;
+}
+
 /* Estilo do card */
 .repo-item {
+    width: 250px;
+    height: 250px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -7,10 +22,11 @@
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     flex: 0 0 calc(16.6667% - 8px);
+    margin: 2px;
 }
 
 .repo-item:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -25,8 +41,13 @@
     font-size: 14px;
     color: #555;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
 }
+
 
 .repo-item a {
     display: inline-block;

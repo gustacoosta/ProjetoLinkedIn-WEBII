@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
 }
 
-.interface-header{
+.interface-header {
     width: 46%;
     margin: 0 auto;
     display: flex;
@@ -42,6 +42,9 @@ header a {
 .menu li {
     margin: 0 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu li a {
@@ -60,6 +63,41 @@ header a {
     padding-top: 2px;
 }
 
+/* Ajustes para alinhar o item "Perfil" */
+.menu li.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.menu li.perfil .perfil2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil2 button.btt {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.perfil2 p {
+    margin-right: 5px;
+}
+
+.perfil2 svg {
+    padding-top: 4px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -89,7 +127,6 @@ header a {
     transition: width 0.3s ease, border-color 0.3s ease;
 }
 
-
 .search-form i {
     position: absolute;
     left: 12px;
@@ -103,37 +140,3 @@ header a {
     width: 290px;
     border: 3px solid #000000;
 }
-
-/* Perfil do Usuário */
-.perfil2 {
-    display: flex;
-    align-items: center;
-}
-
-.perfil2 a {
-    display: flex; 
-    align-items: center;
-}
-
-.perfil2 p {
-    margin-right: 5px;
-}
-
-.perfil2 svg {
-    padding-top: 4px;
-    margin-left: 2px; 
-    vertical-align: middle; 
-}
-
-.btt {
-    color: 'black';
-    padding: 0;
-    margin: 0;
-    font-size: 12px; 
-    display: flex; 
-
-}
-.btt:hover {
-    color: #000; 
-}
-/*acaba menu do feed*/
