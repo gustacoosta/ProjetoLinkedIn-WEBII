@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngIf="repositories.length > 0; else noData">
+      <div *ngFor="let repo of repositories" class="repo-item">
+        <h3>{{ repo.name }}</h3>
+        <p>{{ repo.description }}</p>
+        <a [href]="repo.html_url" target="_blank">Ver no GitHub</a>
+        <p class="stars">⭐ {{ repo.stargazers_count }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #noData>
+    <p>Nenhum repositório encontrado.</p>
+  </ng-template>
+  

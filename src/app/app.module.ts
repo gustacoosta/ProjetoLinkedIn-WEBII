@@ -19,6 +19,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddPostDialogComponent } from './feed/add-post/add-post-dialog/add-post-dialog';
 import { FormsModule } from '@angular/forms';
+import { DiferentaoComponent } from './diferentao/diferentao.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { FormsModule } from '@angular/forms';
     FeedComponent,
     AddPostComponent,
     AddPostDialogComponent,
+    DiferentaoComponent,
   ],
   imports: [
     BrowserModule,
